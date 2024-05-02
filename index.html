@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geethanjali curriculum vitae</title>
+    <style>
+        /* Style for collapsible sections */
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            position: relative;
+        }
+
+        .collapsible::after {
+            content: '\25B6'; /* Unicode character for right-pointing arrow */
+            position: absolute;
+            right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .active::after {
+            transform: rotate(90deg);
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        /* Style for profile image */
+        #profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Curriculum vitae
+</h1>
+
+<img src="download.jpg" alt="Profile Image" id="profile-image">
+<h2>Ningollu Geethanjali</h2>
+
+<button class="collapsible">Career objective</button>
+<div class="content">
+  <p>Seeking to enhance myself from student level to professional level and prove myself worthy in the uplift of the organization & my Skills.</p>
+</div>
+
+<button class="collapsible">Education</button>
+<div class="content">
+  <p><div>
+    <h2>Masters [pursuing]</h2>
+    <p>SRM University AP</p>
+    <p>Stream: Molecular biology and Biotechnology</p>
+</div>
+
+<div>
+    <h2>Bachelors of Science [2020 - 2023]</h2>
+    <p>AURORA`S DEGREE AND PG COLLEGE CHIKKADPALLY HYDERABAD.</p>
+    <p>Stream: Biotechnology, Biochemistry and Chemistry</p>
+    <p>Aggregate: 8.98</p>
+</div>
+
+<div>
+    <h2>Intermediate [2018-2020]</h2>
+    <p>Sri Chaitanya junior kalasala Narayanguda, Hyderabad</p>
+    <p>Stream: BIPC</p>
+    <p>Aggregate: 86 %</p>
+</div>
+
+<div>
+    <h2>Board of Secondary Education</h2>
+    <p>St Mary high school New Nallakunta, Hyderabad</p>
+    <p>Board: Telangana state Board of Secondary Education</p>
+    <p>Aggregate:  8.7</p>
+</div>
+</p>
+</div>
+
+<button class="collapsible">Technical skills</button>
+<div class="content">
+  <p>homology modeling</p>
+  <p>molecular docking</p>
+  <p>MS Office</p>
+  <p>Linux</p>
+</div>
+
+<button class="collapsible">Projects</button>
+<div class="content">
+  <p>A Study on “Antibacterial activity of Achyranthes Aspera”. 
+</p>
+  <p>Egg-shell waste derived biomatrix for the purification of proteins using ion-exchange chromatography</p>
+</div>
+
+<button class="collapsible">Certifications</button>
+<div class="content">
+  <p>Received certification for ‘Introduction to Plant Tissue Culture’ from Atlantis Phytotech pvt.ltd.</p>
+</div>
+
+<button class="collapsible">Hobbies</button>
+<div class="content">
+  <p>Dancing</p>
+  <p>Cooking</p>
+  <p>Video editing</p>
+</div>
+
+<button class="collapsible">Contact Information</button>
+<div class="content">
+  <p>Address: H.NO 136 Baghlingampally, Hyderabad</p>
+  <p>G-mail address:  ningollugeethanjali@gmail.com</p>
+</div>
+
+<script>
+    // JavaScript to toggle collapsible sections
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+
+</body>
+</html>
